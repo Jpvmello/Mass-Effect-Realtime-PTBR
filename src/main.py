@@ -79,7 +79,7 @@ if __name__ == '__main__':
         clock = pygame.time.Clock()
 
         with mss.mss() as sct:
-            subtitle = Subtitle(screen.get_width(), screen.get_height())
+            subtitle = Subtitle(screens[0].width, screens[0].height)
             future = None
             running = True
 
